@@ -22,7 +22,7 @@ public class cgCTL {
 		CGUI.Refresh3();
 
 		ListUnitsCTL luCTL = new ListUnitsCTL();
-		luCTL.listUnits(CGUI);
+		luCTL.listUnits(CGUI); // list of units 
 		CGUI.setVisible(true);
 		CGUI.setState1(true);
 	}
