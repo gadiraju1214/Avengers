@@ -2,7 +2,7 @@ package datamanagement;
 
 import java.util.*;
 import java.io.*;
-
+//checking for merging
 public class AppProperties {  //class contains the properties of the form
 	private static AppProperties self = null;
 	private Properties properties;
