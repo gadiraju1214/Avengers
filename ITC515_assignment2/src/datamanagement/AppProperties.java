@@ -12,3 +12,5 @@ try {properties.load(new FileInputStream("Properties.prop"));}
 catch (IOException e) {throw new RuntimeException("Could not read property file");}}
     public Properties getProperties() {return properties;
 }}
+
+
