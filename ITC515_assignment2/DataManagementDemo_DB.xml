@@ -25,7 +25,7 @@
     <student fname="ghghg" lname="hfhh" sid="4545"/>
   <student fname="shibu" lname="sharma" sid="66"/>
 <student fname="hh" lname="hf" sid="12"/>
-</studentTable>
+<student fname="shivani" lname="sharma" sid="15896"/></studentTable>
   <studentUnitRecordTable>
     <record asg1="15.0" asg2="27.0" exam="50.0" sid="1" uid="ITC515"/>
     <record asg1="20.0" asg2="28.0" exam="50.0" sid="6" uid="ITC215"/>
