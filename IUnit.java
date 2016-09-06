@@ -27,10 +27,12 @@ public interface IUnit {
 	public void setDiCutoff(float cutoff);
 	
 	public float getHdCutoff();
+	//get method for figh distinction marks
 
 	public void setHdCutoff(float cutoff);
 
 	public float getAeCutoff();
+	// get method for Ae 
 
 	public void setAeCutoff(float cutoff);
 
