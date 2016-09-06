@@ -420,7 +420,8 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister,
 				+ student.getFirstName() + " " + student.getLastName());
 	}
 
-	public void setState2(boolean b) {
+	public void setState2(boolean b) 
+	{
 		jComboBox2.setEnabled(b);
 		jlabel6.setText("");
 	}
@@ -432,7 +433,8 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister,
 		jLabel5.setText("");
 	}
 
-	public void Refresh3() {
+	public void Refresh3()
+	{
 		jTextField1.setText("");
 		jTextField2.setText("");
 		jTextField3.setText("");
