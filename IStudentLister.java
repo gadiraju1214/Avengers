@@ -11,5 +11,5 @@ package datamanagement;
 	// method of interface class without arguments
 
 	public void addStudent(IStudent student); 
-	//method of interface class with arguments
+	//method of interface class with arguments as student
 }
