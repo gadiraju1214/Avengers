@@ -1,6 +1,7 @@
 package datamanagement;
 
-public class Unit implements IUnit {
+public class Unit implements IUnit 
+{
 	private String uc;
 	private String UN;
 	private float co2;
@@ -13,7 +14,8 @@ public class Unit implements IUnit {
 	private StudentUnitRecordList rs;
 
 	public Unit(String UC, String un, float f1, float f2, float f3, float f4,
-			float f5, int i1, int i2, int i3, StudentUnitRecordList rl) {
+			float f5, int i1, int i2, int i3, StudentUnitRecordList rl)
+	{
 
 		uc = UC;
 		UN = un;
@@ -26,16 +28,19 @@ public class Unit implements IUnit {
 		rs = rl == null ? new StudentUnitRecordList() : rl;
 	}
 
-	public String getUnitCode() {
+	public String getUnitCode() 
+	{
 		return this.uc;
 	}
 
-	public String getUnitName() {
+	public String getUnitName() 
+	{
 
 		return this.UN;
 	}
 
-	public void setPsCutoff1(float cutoff) {
+	public void setPsCutoff1(float cutoff) 
+	{
 		this.co2 = cutoff;
 	}
 

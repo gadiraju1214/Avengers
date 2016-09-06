@@ -57,7 +57,8 @@ public class UnitManager {
 		throw new RuntimeException("DBMD: createUnit : unit not in file");
 	}
 
-	public UnitMap getUnits() {
+	public UnitMap getUnits()
+	{
 
 		UnitMap uM;
 		IUnit iu;

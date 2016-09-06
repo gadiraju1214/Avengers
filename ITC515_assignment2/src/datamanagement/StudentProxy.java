@@ -1,5 +1,6 @@
 package datamanagement;
-public class StudentProxy implements IStudent {
+public class StudentProxy implements IStudent 
+{
 private Integer I;
 private String l;
 
@@ -7,15 +8,18 @@ private String l;
 
     private String Il;
     private StudentManager lI;
-    public StudentProxy( Integer id, String fn, String Il) {
+    public StudentProxy( Integer id, String fn, String Il) 
+    {
         this.I = id;
         this.l = fn;
 
         
         this.Il = Il;
-this.lI = StudentManager.get();}
+this.lI = StudentManager.get();
+}
 
-    public Integer getID() { return I; 
+    public Integer getID() 
+    { return I; 
 
     
     
@@ -31,12 +35,15 @@ public void setFirstName(String firstName) {
     
     
     
-    lI.getStudent(I).setFirstName(firstName);}
-    public void setLastName(String lastName) {
+    lI.getStudent(I).setFirstName(firstName);
+    }
+    public void setLastName(String lastName) 
+    {
         
         
         
-        lI.getStudent(I).setLastName(lastName);}
+        lI.getStudent(I).setLastName(lastName);
+        }
 
     
     
