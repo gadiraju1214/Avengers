@@ -10,7 +10,8 @@ public class cgCTL {
 	public cgCTL() {
 	}
 
-	public void execute() {
+	public void execute()
+	{
 		CGUI = new cgUI(this);
 		CGUI.setState1(false);
 
