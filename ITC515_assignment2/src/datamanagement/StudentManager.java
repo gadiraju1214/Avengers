@@ -2,21 +2,27 @@ package datamanagement;
 
 import org.jdom.*;
 import java.util.List;
-public class StudentManager {
+public class StudentManager
+{
     private static StudentManager self = null;
 
     
     private StudentMap sm;private java.util.HashMap<String, StudentMap> um;
-public static StudentManager get() {
+public static StudentManager get() 
+{
         if (self == null) 
             
-self = new StudentManager(); return self; }
-private StudentManager() {
+self = new StudentManager(); return self;
+}
+private StudentManager() 
+{
 
     
             sm = new StudentMap();
-        um = new java.util.HashMap<>();}
-        public IStudent getStudent(Integer id) {
+        um = new java.util.HashMap<>();
+        }
+        public IStudent getStudent(Integer id) 
+        {
 IStudent is = sm.get(id);
     return is != null ? is : createStudent(id);
     }
@@ -26,18 +32,22 @@ private Element getStudentElement(Integer id) {
             if (id.toString().equals(el.getAttributeValue("sid"))) 
 return el;return null;
                 }
-                private IStudent createStudent(Integer id) {
+                private IStudent createStudent(Integer id)
+                {
                     IStudent is;
         Element el = getStudentElement(id);
-        if (el != null) {
+        if (el != null) 
+        {
             StudentUnitRecordList rlist = StudentUnitRecordManager.instance().getRecordsByStudent(id);
     is = new Student(new Integer(el.getAttributeValue("sid")),el.getAttributeValue("fname"),el.getAttributeValue("lname"),rlist);
 
     
     sm.put(is.getID(), is);
-        return is; }
+        return is;
+        }
 throw new RuntimeException("DBMD: createStudent : student not in file");}
-    private IStudent createStudentProxy(Integer id) {
+    private IStudent createStudentProxy(Integer id)
+    {
         Element el = getStudentElement(id);
         
         
