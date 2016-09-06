@@ -23,13 +23,13 @@ public class cgCTL {
 		CGUI.Refresh3();
 
 		ListUnitsCTL luCTL = new ListUnitsCTL();
-		luCTL.listUnits(CGUI);
+		luCTL.listUnits(CGUI); // list of units 
 		CGUI.setVisible(true);
 		CGUI.setState1(true);
 	}
 
 	public void unitSelected(String code) {
-
+		//unit selected according to the selected code of the unit
 		if (code.equals("NONE"))
 			CGUI.setState2(false);
 		else {
@@ -55,7 +55,6 @@ public class cgCTL {
 			IStudent s = StudentManager.get().getStudent(id);
 
 			IStudentUnitRecord r = s.getUnitRecord(cuc);
-
 			CGUI.setRecord(r);
 			CGUI.setState3(true);
 			CGUI.setState4(true);
@@ -67,6 +66,7 @@ public class cgCTL {
 	}
 
 	public String checkGrade(float f, float g, float h) {
+		//get grades according to the marks
 		IUnit u = UnitManager.UM().getUnit(cuc);
 		String s = u.getGrade(f, g, h);
 		CGUI.setState4(true);
@@ -78,6 +78,7 @@ public class cgCTL {
 	}
 
 	public void enableChangeMarks() {
+		//change marks according to the selected unit and student
 		CGUI.setState4(false);
 		CGUI.setState6(false);
 		CGUI.setState5(true);
@@ -85,7 +86,7 @@ public class cgCTL {
 	}
 
 	public void saveGrade(float asg1, float asg2, float exam) {
-
+		//method to save grades according to unit and student selected
 		IUnit u = UnitManager.UM().getUnit(cuc);
 		IStudent s = StudentManager.get().getStudent(currentStudentID);
 

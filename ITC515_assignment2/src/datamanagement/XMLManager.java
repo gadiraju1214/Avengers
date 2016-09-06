@@ -62,4 +62,4 @@ XMLOutputter outputter = new XMLOutputter(Format.getPrettyFormat());
         catch (IOException ioe) {
 System.err.printf( "%s\n", "DBMD : XMLManager : saveDocument : Error saving XML to " + xmlfile);
                     throw new RuntimeException("DBMD: XMLManager : saveDocument : error writing to file");
-}}}
+        }}}
