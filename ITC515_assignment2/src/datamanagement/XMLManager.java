@@ -8,12 +8,14 @@ import org.jdom.output.XMLOutputter;
 import java.io.IOException;
 import org.jdom.JDOMException;
 
-public class XMLManager {
+public class XMLManager
+{
 private static XMLManager self = null;
 
 
         private Document doc;
-        public static XMLManager getXML() { if (self == null ) self = new XMLManager(); return self;
+        public static XMLManager getXML() 
+        { if (self == null ) self = new XMLManager(); return self;
 }
     private XMLManager() {init();
 
@@ -25,7 +27,8 @@ private static XMLManager self = null;
     
     
     
-public void init() {
+public void init()
+{
         String s = AppProperties.getInstance().getProperties().getProperty("XMLFILE");
 try {
             SAXBuilder b = new SAXBuilder();
