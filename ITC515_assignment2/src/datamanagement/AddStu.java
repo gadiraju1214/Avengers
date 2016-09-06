@@ -44,21 +44,24 @@ public class AddStu {
 				try {
 					AddStu window = new AddStu();
 					window.frame.setVisible(true);
-				} catch (Exception e) {
+				} catch (Exception e) 
+				{
 					e.printStackTrace();
 				}
 			}
 		});
 	}
 	
-	public void addStud(){
+	public void addStud()
+	{
 		
 		String sid=textField_2.getText();
 		String finame=textField.getText();
 		String lsname=textField_1.getText();
 		System.out.print(sid + "DataManagementDemo_DB.xml");
 		
-		  try{
+		  try
+		  {
 		        File fXmlFile = new File("DataManagementDemo_DB.xml");
 		        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		        DocumentBuilder dbf = dbFactory.newDocumentBuilder();
