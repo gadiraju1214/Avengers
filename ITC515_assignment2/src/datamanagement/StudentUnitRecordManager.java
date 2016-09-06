@@ -51,7 +51,8 @@ public StudentUnitRecordList getRecordsByStudent( Integer studentID ) {
                         return recs;
     }
 
-    public void saveRecord( IStudentUnitRecord irec ) {
+    public void saveRecord( IStudentUnitRecord irec )
+    {
         for (Element el : (List<Element>) XMLManager.getXML().getDocument().getRootElement().getChild("studentUnitRecordTable").getChildren("record")) {
             if (irec.getStudentID().toString().equals(el.getAttributeValue("sid")) && irec.getUnitCode().equals(el.getAttributeValue("uid"))) {
                 el.setAttribute("asg1", new Float(irec.getAsg1()).toString());           
