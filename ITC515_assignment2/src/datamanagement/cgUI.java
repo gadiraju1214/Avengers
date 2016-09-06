@@ -443,22 +443,26 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister,
 		jTextField3.setEditable(false);
 	}
 
-	public void setState3(boolean b) {
+	public void setState3(boolean b) 
+	{
 		jButton2.setEnabled(b);
 	}
 
-	public void setState4(boolean b) {
+	public void setState4(boolean b) 
+	{
 		jButton1.setEnabled(b);
 		// gradeLB.setText("");
 	}
 
-	public void setState5(boolean b) {
+	public void setState5(boolean b)
+	{
 		jTextField1.setEditable(b);
 		jTextField2.setEditable(b);
 		jTextField3.setEditable(b);
 	}
 
-	public void setState6(boolean b) {
+	public void setState6(boolean b)
+	{
 		jButton3.setEnabled(b);
 	}
 
