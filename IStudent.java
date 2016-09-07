@@ -9,13 +9,15 @@ public interface IStudent {  //interface created
 	//method to get first name of the student with method getFirstName 
 
 	public void setFirstName(String firstName);
-	//method to set the first name of the student
+	//method to set the first name of the student with setFirstName method
+	//with strig argument FirstName
 
 	public String getLastName();
-	//method to get last name of the student
+	//method to get last name of the student with method have no arguments
 
 	public void setLastName(String lastName);
 	//method to set last name of the student
+	//wih lastName argument of string type
 
 	public void addUnitRecord(IStudentUnitRecord record);
 	//method to add units according to the student's unit records
