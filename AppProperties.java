@@ -18,7 +18,8 @@ public class AppProperties {  //class contains the properties of the form
 	private AppProperties() {
 		properties = new Properties();
 		try {
-			properties.load(new FileInputStream("Properties.prop"));// load properties from form
+			properties.load(new FileInputStream("Properties.prop"));
+			// load properties from "roperties.prop"
 		} catch (IOException e) {
 			throw new RuntimeException("Could not read property file");
 		}
@@ -26,5 +27,6 @@ public class AppProperties {  //class contains the properties of the form
 
 	public Properties getProperties() { // method to return properties from form 
 		return properties;
+		//Method getproperties return properties
 	}
-}//Method getproperties return properties
+}
