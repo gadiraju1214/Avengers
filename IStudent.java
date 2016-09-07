@@ -3,10 +3,10 @@ package datamanagement;
 public interface IStudent {  //interface created
 
 	public Integer getID();
-	//method to get student id 
+	//method to get student id with method getID
 
 	public String getFirstName();
-	//method to get first name of the student
+	//method to get first name of the student with method getFirstName 
 
 	public void setFirstName(String firstName);
 	//method to set the first name of the student
