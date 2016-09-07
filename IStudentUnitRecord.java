@@ -7,10 +7,10 @@ public interface IStudentUnitRecord {
 	//method to get student id with StudenID() method
 
 	public String getUnitCode();
-	//method to get code of subject
+	//method to get code of subject with getunitcode()method with arguemnts
 
 	public void setAsg1(float mark);
-	//set marks of assignment1 
+	//set marks of assignment1 with method setAsg1 with argument mark
 
 	public float getAsg1();
 	//get method to get marks of assignment 2
