@@ -53,7 +53,7 @@ public interface IUnit {
 	// get grades according to marks ie: fails,pass etc
 
 	public void addStudentRecord(IStudentUnitRecord record);
-	//add student record
+	//add student record with mthod addStudentRecord have argument as record of units
 
 	public IStudentUnitRecord getStudentRecord(int studentID);
 	//add units record with getStudentRecord method have studentID as argument
