@@ -226,7 +226,8 @@ public class Addut {
 		lblNewLabel.setBounds(223, 21, 117, 27);
 		frmAddUnit.getContentPane().add(lblNewLabel);
 	}
-	public void uio(){
+	public void uio()
+	{
 		String uid=textField_4.getText();
 		String u_Name=textField_3.getText();
 		//String sid=textField_2.getText();
@@ -268,7 +269,8 @@ public class Addut {
 
 	            StreamResult result = new StreamResult("DataManagementDemo_DB.xml");
 	            trans.transform(source, result);
-	        } catch (Exception em) {
+	        } catch (Exception em) 
+		{
 	            em.printStackTrace();
 	        }
 		
