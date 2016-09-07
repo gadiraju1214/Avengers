@@ -46,11 +46,11 @@ public interface IUnit {
 	//get range of exam marks ie:0 to 100
 
 	public void setAssessmentWeights(int asg1Wgt, int asg2Wgt, int examWgt);
-	//set assessment weight that should not be less than 0 and more than 100
+	//set total assessments marks according to asg1,asg2,exam
 	
 
 	public String getGrade(float asg1, float asg2, float exam);
-	// get grades according to marks ie: fails,pass etc
+	//  grades method have argument of as1,asg2,exam
 
 	public void addStudentRecord(IStudentUnitRecord record);
 	//add student record with mthod addStudentRecord have argument as record of units
