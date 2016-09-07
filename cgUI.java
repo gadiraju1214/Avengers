@@ -52,12 +52,12 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLis
 		jButton1 = new javax.swing.JButton();
 		jPanel4 = new javax.swing.JPanel();
 		jLabel5 = new javax.swing.JLabel();
-
+		// different textfieds, combobox and label used in the project
 		setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
 		jLabel1.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
 		jLabel1.setText("Check Grade UI");
-
+		//font of label is fixed
 		jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Unit"));
 
 		jComboBox1.setModel(uM);
@@ -66,7 +66,7 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLis
 				jComboBox1ItemStateChanged(evt);
 			}
 		});
-
+		// to view the information all together GroupLayout is used
 		javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
 		jPanel1.setLayout(jPanel1Layout);
 		jPanel1Layout.setHorizontalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -109,7 +109,7 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLis
 		jLabel3.setText("Asg2:");
 
 		jLabel4.setText("Exam:");
-
+		//text and border of Label ad panel is fixed
 		jTextField1.setEditable(false);
 		jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
 			public void keyTyped(java.awt.event.KeyEvent evt) {
