@@ -1,6 +1,7 @@
 package datamanagement;
 
-public interface IUnit {// interface class of units of the students
+public interface IUnit {
+	// interface class of units of the students
 	
 	//methods of interface to get and set unit and grade information
 	public String getUnitCode();
@@ -55,7 +56,7 @@ public interface IUnit {// interface class of units of the students
 	//add student record
 
 	public IStudentUnitRecord getStudentRecord(int studentID);
-	//add units record
+	//add units record with getStudentRecord method have studentID as argument
 
 	public StudentUnitRecordList listStudentRecords();
 	// add number of students
