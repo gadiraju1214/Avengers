@@ -13,7 +13,7 @@ public interface IStudentUnitRecord {
 	//set marks of assignment1 with method setAsg1 with argument mark
 
 	public float getAsg1();
-	//get method to get marks of assignment 2
+	//get method to get marks of assignment 2 withoud arguments
 
 	public void setAsg2(float mark);
 	//set marks of assignment1 with setAsg2 method have argumet of markd of type float
