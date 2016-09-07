@@ -3,6 +3,7 @@ package datamanagement;
 public class cgCTL {
 
 	cgUI CGUI;
+	//variable of class type cgUI
 	String cuc = null;
 	Integer currentStudentID = null;
 	boolean changed = false;
@@ -20,6 +21,7 @@ public class cgCTL {
 		CGUI.setState5(false);
 		CGUI.setState6(false);
 		CGUI.Refresh3();
+		//different states of CGUI at selection
 
 		ListUnitsCTL luCTL = new ListUnitsCTL();
 		luCTL.listUnits(CGUI); // list of units 
@@ -41,6 +43,7 @@ public class cgCTL {
 	}
 
 	public void studentSelected(Integer id) {
+		//select studet according to stuednt id
 		currentStudentID = id;
 		if (currentStudentID.intValue() == 0) {
 			CGUI.Refresh3();
@@ -77,7 +80,7 @@ public class cgCTL {
 	}
 
 	public void enableChangeMarks() {
-		//change marks according to the selected unit and student
+		//enable to change marks according to the selected unit and student
 		CGUI.setState4(false);
 		CGUI.setState6(false);
 		CGUI.setState5(true);
@@ -86,6 +89,7 @@ public class cgCTL {
 
 	public void saveGrade(float asg1, float asg2, float exam) {
 		//method to save grades according to unit and student selected
+		//asg1,asg2,exam passed as argument
 		IUnit u = UnitManager.UM().getUnit(cuc);
 		IStudent s = StudentManager.get().getStudent(currentStudentID);
 
