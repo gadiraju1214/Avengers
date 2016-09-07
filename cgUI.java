@@ -111,10 +111,11 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLis
 		jLabel4.setText("Exam:");
 		//text and border of Label ad panel is fixed
 		jTextField1.setEditable(false);
+		//textfield values can't be changed
 		jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
 			public void keyTyped(java.awt.event.KeyEvent evt) {
 				jTextFieldKeyTyped(evt);
-			}
+			}// information can be add from keyboard
 		});
 
 		jTextField2.setEditable(false);
@@ -136,6 +137,7 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLis
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				jButton1ActionPerformed(evt);
 			}
+			//button 1 text is set to change
 		});
 		jButton2 = new javax.swing.JButton();
 
@@ -145,16 +147,18 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLis
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
 				jButton3ActionPerformed(evt);
 			}
-		});
+		});//button 2 contain text check grade and work on click
 
 		javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
 		jPanel3Layout.setHorizontalGroup(jPanel3Layout.createParallelGroup(Alignment.LEADING).addGroup(jPanel3Layout
 				.createSequentialGroup()
+				//Panel layout is fixed
 				.addGroup(jPanel3Layout.createParallelGroup(Alignment.LEADING)
 						.addGroup(jPanel3Layout.createSequentialGroup().addContainerGap().addComponent(jLabel2)
 								.addPreferredGap(ComponentPlacement.RELATED)
 								.addComponent(jTextField1, GroupLayout.PREFERRED_SIZE, 59, GroupLayout.PREFERRED_SIZE)
 								.addGap(18).addComponent(jLabel3))
+								//textfield and labels are settled on the panel in group
 						.addGroup(jPanel3Layout.createSequentialGroup().addGap(85).addComponent(jButton1,
 								GroupLayout.PREFERRED_SIZE, 84, GroupLayout.PREFERRED_SIZE)))
 				.addGap(18)
@@ -179,7 +183,7 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLis
 								.createParallelGroup(Alignment.BASELINE).addComponent(jButton1).addComponent(jButton2))
 						.addContainerGap()));
 		jPanel3.setLayout(jPanel3Layout);
-
+		
 		jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Grade"));
 
 		jLabel5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
@@ -192,16 +196,18 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLis
 		jPanel4Layout.setHorizontalGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 				.addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE,
 						153, Short.MAX_VALUE));
+		//layout is setteled in horizontal order
 		jPanel4Layout.setVerticalGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
 				.addGroup(jPanel4Layout.createSequentialGroup().addGap(34, 34, 34).addComponent(jLabel5)
 						.addContainerGap(43, Short.MAX_VALUE)));
-
+		
 		jlabel6 = new JLabel();
 		jlabel6.setText("Error message");
+		//display an error megssage
 		jlabel6.setForeground(Color.RED);
 		jlabel6.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		jButton3 = new javax.swing.JButton();
-
+		
 		jButton3.setText("Save");
 		jButton3.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent evt) {
