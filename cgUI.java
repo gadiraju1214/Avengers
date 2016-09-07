@@ -265,7 +265,7 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLis
 				cU = "NONE";
 			}
 			ctl.unitSelected(cU);
-		}
+		}//on select of combox1 information is updated
 	}// GEN-LAST:event_jComboBox1ItemStateChanged
 
 	private void jComboBox2ItemStateChanged(java.awt.event.ItemEvent evt) {// GEN-FIRST:event_jComboBox2ItemStateChanged
@@ -280,6 +280,7 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLis
 			}
 			ctl.studentSelected(sid);
 		}
+		//combobox two items are changed
 	}// GEN-LAST:event_jComboBox2ItemStateChanged
 
 	private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton3ActionPerformed
@@ -287,6 +288,7 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLis
 		f2 = new Float(jTextField2.getText()).floatValue();
 		f3 = new Float(jTextField3.getText()).floatValue();
 		// lblErrMsg.setText("");
+		//action performed on button click
 		try {
 			String s = ctl.checkGrade(f1, f2, f3);
 			jLabel5.setText(s);
@@ -318,7 +320,9 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLis
 			jlabel6.setText(re.getMessage());
 		}
 	}// GEN-LAST:event_jButton2ActionPerformed
-
+	
+	
+	//methods used to perform functioning of comboboxes and labels
 	public void clearUnits() {
 		uM.removeAllElements();
 		uM.addElement("<none selected>");
@@ -355,7 +359,9 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLis
 		jLabel5.setText("");
 	}
 
-	public void Refresh3() { //to select other unit
+	public void Refresh3() { 
+		//to select other unit
+		//to clear the previous text from the textfields and labels
 		jTextField1.setText("");
 		jTextField2.setText("");
 		jTextField3.setText("");
