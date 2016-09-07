@@ -22,11 +22,11 @@ public interface IStudentUnitRecord {
 	//get method to get marks of assignment 2
 
 	public void setExam(float mark);
-	//set marks in the exam
+	//set marks in the exam with set exam method have argument of marks 
 
 	public float getExam();
-	//get exam marks
+	//get exam marks with getExam method
 
 	public float getTotal();
-	//calculate total marks of student
+	//calculate total marks of student with getTotal method
 }
