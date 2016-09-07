@@ -5,7 +5,7 @@ public interface IUnit {
 	
 	//methods of interface to get and set unit and grade information
 	public String getUnitCode();
-	// to get unit code eg
+	// to get unit code eg. 556
 
 	public String getUnitName();
 	//to get unit name eg;ITC
@@ -16,7 +16,7 @@ public interface IUnit {
 	public void setPsCutoff1(float cutoff);
 	//to set, student pass grade in the subject
 
-	//cutoff methods to limit the high distinction,credit,pass,fail
+	//cutoff methods to limit the high distinction,credit,pass,fail marks
 	public float getCrCutoff();
 	//get method for credit marks
 
