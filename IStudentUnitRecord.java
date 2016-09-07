@@ -4,7 +4,7 @@ public interface IStudentUnitRecord {
 	// an interface class for students unit record
 
 	public Integer getStudentID();
-	//method to get student id
+	//method to get student id with StudenID() method
 
 	public String getUnitCode();
 	//method to get code of subject
@@ -16,7 +16,7 @@ public interface IStudentUnitRecord {
 	//get method to get marks of assignment 2
 
 	public void setAsg2(float mark);
-	//set marks of assignment1 
+	//set marks of assignment1 with setAsg2 method have argumet of markd of type float
 
 	public float getAsg2();
 	//get method to get marks of assignment 2
