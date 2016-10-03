@@ -53,7 +53,7 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLis
 		jButton1 = new javax.swing.JButton();
 		jPanel4 = new javax.swing.JPanel();
 		jLabel5 = new javax.swing.JLabel();
-		// different textfieds, combobox and label used in the project
+		// Different textfieds and combo box and label used in the project
 		setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
 		jLabel1.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
