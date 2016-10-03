@@ -7,6 +7,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import java.awt.Font;
 import java.awt.Color;
 //Layout of the Project using swing 
+//Remove java.awt
 
 
 public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLister {
