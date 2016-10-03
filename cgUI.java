@@ -67,7 +67,7 @@ public class cgUI extends javax.swing.JFrame implements IUnitLister, IStudentLis
 				jComboBox1ItemStateChanged(evt);
 			}
 		});
-		// to view the information all together GroupLayout is used
+		// to view the information all together GroupLayout is used//
 		javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
 		jPanel1.setLayout(jPanel1Layout);
 		jPanel1Layout.setHorizontalGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
